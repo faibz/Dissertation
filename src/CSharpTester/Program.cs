@@ -1,21 +1,27 @@
-﻿using CSharpTester.Objects;
-using CSharpTester.Testers;
+﻿using BenchmarkDotNet.Running;
 
 namespace CSharpTester
 {
-    internal class Program
+    public class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            var baselineTester = new BaseTester();
-            var baselineTestResults = baselineTester.RunTests();
+//            var baselineTester = new BaseTester();
+//            var baselineTestResults = baselineTester.RunTests();
+//
+//            var smallObjectTester = new CollectionTester<SmallObject>(new SmallObject());
+//            var smallObjectTestResults = smallObjectTester.RunTests();
+//
+//            var largeObjectTester = new CollectionTester<LargeObject>(new LargeObject());
+//            var largeObjectTestResults = largeObjectTester.RunTests();
 
-            var smallObjectTester = new CollectionTester<SmallObject>(new SmallObject());
-            var smallObjectTestResults = smallObjectTester.RunTests();
+            BenchmarkRunner.Run<Tests.BaselineTests>();
 
-            var largeObjectTester = new CollectionTester<LargeObject>(new LargeObject());
-            var largeObjectTestResults = largeObjectTester.RunTests();
+            BenchmarkRunner.Run<Tests.PrimitiveTests.ListTests>();
+            BenchmarkRunner.Run<Tests.PrimitiveTests.HashsetTests>();
 
+            BenchmarkRunner.Run<Tests.SmallObjectTests.ListTests>();
+            BenchmarkRunner.Run<Tests.SmallObjectTests.HashsetTests>();
         }
     }
 }
