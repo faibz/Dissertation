@@ -1,4 +1,4 @@
-﻿namespace CSharpTester.Testers
+﻿namespace CSharpTester.Objects
 {
     public class TestResult
     {

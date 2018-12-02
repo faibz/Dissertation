@@ -1,4 +1,6 @@
-﻿namespace CSharpTester.Testers
+﻿using CSharpTester.Objects;
+
+namespace CSharpTester.Testers
 {
     public class BaseTester : ITester
     {
