@@ -4,6 +4,6 @@
     {
         void Add();
         void Remove();
-        void Contains();
+        void Contains(); //remove?
     }
 }
