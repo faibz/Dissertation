@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using BenchmarkDotNet.Attributes;
+using CSharpTester.Objects;
 
 namespace CSharpTester.Tests
 {
-    public class PrimitiveTests
+    public class LargeObjectTests
     {
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("List-Primitive")]
+        [RPlotExporter, RankColumn, JsonExporter("List-LargeObject")]
         public class ListTests
         {
-            public IList<int> List { get; set; } = new List<int>();
+            public IList<LargeObject> List { get; set; } = new List<LargeObject>();
+            private readonly LargeObject _object = new LargeObject();
 
             [Params(1, 10, 1000, 10_000_000)]
             public int Count { get; set; }
@@ -25,7 +27,7 @@ namespace CSharpTester.Tests
 
                 for (var i = 0; i < Count; i++)
                 {
-                    List.Add(i);
+                    List.Add(_object);
                 }
             }
 
@@ -36,17 +38,18 @@ namespace CSharpTester.Tests
             }
 
             [GlobalCleanup]
-            public void Cleanup()
+            public void Remove()
             {
                 List.Clear();
             }
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Array-Primitive")]
+        [RPlotExporter, RankColumn, JsonExporter("Array-SmallObject")]
         public class ArrayTests
         {
-            public int[] Array { get; set; }
+            public LargeObject[] Array { get; set; }
+            private readonly LargeObject _object = new LargeObject();
 
             [Params(1, 10, 1000, 10_000_000)]
             public int Count { get; set; }
@@ -57,12 +60,12 @@ namespace CSharpTester.Tests
             [GlobalSetup]
             public void Setup()
             {
-                Array = new int[Count];
+                Array = new LargeObject[Count];
                 _index = _random.Next(Count);
 
                 for (var i = 0; i < Count; i++)
                 {
-                    Array[i] = i;
+                    Array[i] = _object;
                 }
             }
 
@@ -79,11 +82,44 @@ namespace CSharpTester.Tests
             }
         }
 
+        //        [ClrJob(true), CoreJob, MonoJob, CoreRtJob]
+        //        [RPlotExporter, RankColumn, JsonExporter("Hashset-SmallObject")]
+        //        public class HashsetTests
+        //        {
+        //            public HashSet<SmallObject> Collection { get; set; } = new HashSet<SmallObject>();
+        //            private readonly SmallObject _object = new SmallObject(0, 'a');
+        //
+        //            [Benchmark]
+        //            public void Add()
+        //            {
+        //                for (var i = 0; i < 100_000_000; i++)
+        //                {
+        //                    Collection.Add(_object);
+        //                }
+        //            }
+        //
+        //            [Benchmark]
+        //            public void Contains()
+        //            {
+        //                for (var i = 0; i < 100_000_000; i++)
+        //                {
+        //                    Collection.Add(_object);
+        //                }
+        //            }
+        //
+        //            [Benchmark]
+        //            public void Remove()
+        //            {
+        //                Collection.Remove(_object);
+        //            }
+        //        }
+
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Queue-Primitive")]
+        [RPlotExporter, RankColumn, JsonExporter("Queue-LargeObject")]
         public class QueueTests
         {
-            public Queue<int> Queue { get; set; } = new Queue<int>();
+            public Queue<LargeObject> Queue { get; set; } = new Queue<LargeObject>();
+            private readonly LargeObject _object = new LargeObject();
 
             [Params(1, 10, 1000, 10_000_000)]
             public int Count { get; set; }
@@ -93,7 +129,7 @@ namespace CSharpTester.Tests
             {
                 for (var i = 0; i < Count; i++)
                 {
-                    Queue.Enqueue(i);
+                    Queue.Enqueue(_object);
                 }
             }
 
@@ -108,10 +144,11 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Stack-Primitive")]
+        [RPlotExporter, RankColumn, JsonExporter("Stack-LargeObject")]
         public class StackTests
         {
-            public Stack<int> Stack { get; set; } = new Stack<int>();
+            public Stack<LargeObject> Stack { get; set; } = new Stack<LargeObject>();
+            private readonly LargeObject _object = new LargeObject();
 
             [Params(1, 10, 1000, 10_000_000)]
             public int Count { get; set; }
@@ -121,7 +158,7 @@ namespace CSharpTester.Tests
             {
                 for (var i = 0; i < Count; i++)
                 {
-                    Stack.Push(i);
+                    Stack.Push(_object);
                 }
             }
 
@@ -136,10 +173,11 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Dictionary-Primitive")]
+        [RPlotExporter, RankColumn, JsonExporter("Dictionary-SmallObject")]
         public class DictionaryTests
         {
-            public IDictionary<int, int> Dictionary { get; set; } = new Dictionary<int, int>();
+            public IDictionary<int, LargeObject> Dictionary { get; set; } = new Dictionary<int, LargeObject>();
+            private readonly LargeObject _object = new LargeObject();
 
             [Params(1, 10, 1000, 10_000_000)]
             public int Count { get; set; }
@@ -154,7 +192,7 @@ namespace CSharpTester.Tests
 
                 for (var i = 0; i < Count; i++)
                 {
-                    Dictionary.Add(i, i);
+                    Dictionary.Add(i, _object);
                 }
             }
 
@@ -168,45 +206,6 @@ namespace CSharpTester.Tests
             public void Cleanup()
             {
                 Dictionary.Clear();
-            }
-        }
-
-        [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("LinkedList-Primitive")]
-        public class LinkedListTests
-        {
-            public LinkedList<int> LinkedList { get; set; } = new LinkedList<int>();
-
-            [Params(1, 10, 1000, 10_000_000)]
-            public int Count { get; set; }
-
-            private readonly Random _random = new Random();
-            private int _find;
-
-            [Benchmark]
-            public void Add()
-            {
-                _find = _random.Next(Count);
-
-                for (var i = 0; i < Count; i++)
-                {
-                    LinkedList.AddFirst(i);
-                }
-            }
-
-            [Benchmark]
-            public void Find()
-            {
-                var res = LinkedList.Find(_find);
-            }
-
-            [Benchmark]
-            public void Remove()
-            {
-                for (var i = 0; i < Count; i++)
-                {
-                    LinkedList.RemoveLast();
-                }
             }
         }
     }
