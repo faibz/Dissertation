@@ -1,4 +1,7 @@
-﻿using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Running;
+using BenchmarkDotNet.Toolchains.CsProj;
 
 namespace CSharpTester
 {
@@ -6,35 +9,33 @@ namespace CSharpTester
     {
         public static void Main(string[] args)
         {
-            BenchmarkRunner.Run<Tests.BaselineTests>();
+            BenchmarkRunner.Run<Tests.BaselineTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
 
             //QUEUE TESTS
-            BenchmarkRunner.Run<Tests.PrimitiveTests.QueueTests>();
-            BenchmarkRunner.Run<Tests.SmallObjectTests.QueueTests>();
-            BenchmarkRunner.Run<Tests.LargeObjectTests.QueueTests>();
+            BenchmarkRunner.Run<Tests.PrimitiveTests.QueueTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.SmallObjectTests.QueueTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.LargeObjectTests.QueueTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
 
             //STACK TESTS
-            BenchmarkRunner.Run<Tests.PrimitiveTests.StackTests>();
-            BenchmarkRunner.Run<Tests.SmallObjectTests.StackTests>();
-            BenchmarkRunner.Run<Tests.LargeObjectTests.StackTests>();
+            BenchmarkRunner.Run<Tests.PrimitiveTests.StackTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.SmallObjectTests.StackTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.LargeObjectTests.StackTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
 
             //SEQUENTIAL TESTS
-            BenchmarkRunner.Run<Tests.PrimitiveTests.LinkedListTests>();
-
-            //Create bag tests?
+            BenchmarkRunner.Run<Tests.PrimitiveTests.LinkedListTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
 
             //INDEX RETRIEVAL
-            BenchmarkRunner.Run<Tests.PrimitiveTests.ListTests>();
-            BenchmarkRunner.Run<Tests.PrimitiveTests.ArrayTests>();
-            BenchmarkRunner.Run<Tests.SmallObjectTests.ListTests>();
-            BenchmarkRunner.Run<Tests.SmallObjectTests.ArrayTests>();
-            BenchmarkRunner.Run<Tests.LargeObjectTests.ListTests>();
-            BenchmarkRunner.Run<Tests.LargeObjectTests.ArrayTests>();
+            BenchmarkRunner.Run<Tests.PrimitiveTests.ListTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.PrimitiveTests.ArrayTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.SmallObjectTests.ListTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.SmallObjectTests.ArrayTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.LargeObjectTests.ListTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.LargeObjectTests.ArrayTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
 
             //KEY/VALUE PAIRS
-            BenchmarkRunner.Run<Tests.PrimitiveTests.DictionaryTests>();
-            BenchmarkRunner.Run<Tests.SmallObjectTests.DictionaryTests>();
-            BenchmarkRunner.Run<Tests.LargeObjectTests.DictionaryTests>();
+            BenchmarkRunner.Run<Tests.PrimitiveTests.DictionaryTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.SmallObjectTests.DictionaryTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
+            BenchmarkRunner.Run<Tests.LargeObjectTests.DictionaryTests>(DefaultConfig.Instance.With(Job.Default.With(CsProjCoreToolchain.NetCoreApp22)));
         }
     }
 }

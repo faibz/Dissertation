@@ -3,17 +3,21 @@
 namespace CSharpTester.Tests
 {
     [ClrJob(true), CoreJob, MonoJob]
-    [RPlotExporter, RankColumn, JsonExporter("Baseline")]
+    [RankColumn, JsonExporter("Baseline")]
     public class BaselineTests
     {
-        [Params(1, 10, 1000, 100_000_000)]
+        [Params(1, 10, 1000, 10000)]
         public int Count { get; set; }
 
         [Benchmark]
-        public void BaselineTest()
+        public int BaselineTest()
         {
-            for (int i = 0; i < Count; i++)
-            { }
+            var i = 0;
+
+            for (; i < Count; i++)
+            {}
+
+            return i;
         }
     }
 }

@@ -7,12 +7,12 @@ namespace CSharpTester.Tests
     public class PrimitiveTests
     {
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("List-Primitive")]
+        [RankColumn, JsonExporter("List-Primitive")]
         public class ListTests
         {
             public IList<int> List { get; set; } = new List<int>();
 
-            [Params(1, 10, 1000, 10_000_000)]
+            [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
             private readonly Random _random = new Random();
@@ -30,9 +30,9 @@ namespace CSharpTester.Tests
             }
 
             [Benchmark]
-            public void IndexRetrieval()
+            public object IndexRetrieval()
             {
-                var res = List[_index];
+                return List[_index];
             }
 
             [GlobalCleanup]
@@ -43,12 +43,12 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Array-Primitive")]
+        [RankColumn, JsonExporter("Array-Primitive")]
         public class ArrayTests
         {
             public int[] Array { get; set; }
 
-            [Params(1, 10, 1000, 10_000_000)]
+            [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
             private readonly Random _random = new Random();
@@ -67,9 +67,9 @@ namespace CSharpTester.Tests
             }
 
             [Benchmark]
-            public void IndexRetrieval()
+            public object IndexRetrieval()
             {
-                var res = Array[_index];
+                return Array[_index];
             }
 
             [GlobalCleanup]
@@ -80,26 +80,22 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Queue-Primitive")]
+        [RankColumn, JsonExporter("Queue-Primitive")]
         public class QueueTests
         {
             public Queue<int> Queue { get; set; } = new Queue<int>();
 
-            [Params(1, 10, 1000, 10_000_000)]
+            [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
             [Benchmark]
-            public void Enqueue()
+            public void EnqueueAndDequeue()
             {
                 for (var i = 0; i < Count; i++)
                 {
                     Queue.Enqueue(i);
                 }
-            }
 
-            [Benchmark]
-            public void Dequeue()
-            {
                 for (var i = 0; i < Count; i++)
                 {
                     Queue.Dequeue();
@@ -108,26 +104,22 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Stack-Primitive")]
+        [RankColumn, JsonExporter("Stack-Primitive")]
         public class StackTests
         {
             public Stack<int> Stack { get; set; } = new Stack<int>();
 
-            [Params(1, 10, 1000, 10_000_000)]
+            [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
             [Benchmark]
-            public void Push()
+            public void PushAndPop()
             {
                 for (var i = 0; i < Count; i++)
                 {
                     Stack.Push(i);
                 }
-            }
 
-            [Benchmark]
-            public void Pop()
-            {
                 for (var i = 0; i < Count; i++)
                 {
                     Stack.Pop();
@@ -136,12 +128,12 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("Dictionary-Primitive")]
+        [RankColumn, JsonExporter("Dictionary-Primitive")]
         public class DictionaryTests
         {
             public IDictionary<int, int> Dictionary { get; set; } = new Dictionary<int, int>();
 
-            [Params(1, 10, 1000, 10_000_000)]
+            [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
             private readonly Random _random = new Random();
@@ -159,9 +151,9 @@ namespace CSharpTester.Tests
             }
 
             [Benchmark]
-            public void KeyLookup()
+            public object KeyLookup()
             {
-                var res = Dictionary[_key];
+                return Dictionary[_key];
             }
 
             [GlobalCleanup]
@@ -172,12 +164,12 @@ namespace CSharpTester.Tests
         }
 
         [ClrJob(true), CoreJob, MonoJob]
-        [RPlotExporter, RankColumn, JsonExporter("LinkedList-Primitive")]
+        [RankColumn, JsonExporter("LinkedList-Primitive")]
         public class LinkedListTests
         {
             public LinkedList<int> LinkedList { get; set; } = new LinkedList<int>();
 
-            [Params(1, 10, 1000, 10_000_000)]
+            [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
             private readonly Random _random = new Random();
@@ -195,9 +187,9 @@ namespace CSharpTester.Tests
             }
 
             [Benchmark]
-            public void Find()
+            public object Find()
             {
-                var res = LinkedList.Find(_find);
+                return LinkedList.Find(_find);
             }
 
             [Benchmark]
