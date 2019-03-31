@@ -172,24 +172,19 @@ namespace CSharpTester.Tests
             [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
-            private readonly Random _random = new Random();
-            private int _find;
-
             [Benchmark]
             public void Add()
             {
-                _find = _random.Next(Count);
-
                 for (var i = 0; i < Count; i++)
                 {
-                    LinkedList.AddFirst(i);
+                    LinkedList.AddLast(i);
                 }
             }
 
             [Benchmark]
             public object Find()
             {
-                return LinkedList.Find(_find);
+                return LinkedList.Find(Count - 1);
             }
 
             [Benchmark]

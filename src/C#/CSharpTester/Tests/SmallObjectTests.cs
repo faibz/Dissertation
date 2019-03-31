@@ -168,5 +168,49 @@ namespace CSharpTester.Tests
                 Dictionary.Clear();
             }
         }
+
+        [ClrJob(true), CoreJob, MonoJob]
+        [RankColumn, JsonExporter("LinkedList-Primitive")]
+        public class LinkedListTests
+        {
+            public LinkedList<SmallObject> LinkedList { get; set; } = new LinkedList<SmallObject>();
+            private readonly SmallObject _object = new SmallObject();
+
+            [Params(1, 10, 1000, 10000)]
+            public int Count { get; set; }
+
+            private readonly Random _random = new Random();
+            private int _find;
+
+            [GlobalSetup]
+            public void Setup()
+            {
+                _find = _random.Next(Count);
+            }
+
+            [Benchmark]
+            public void Add()
+            {
+                for (var i = 0; i < Count; i++)
+                {
+                    LinkedList.AddLast(_object);
+                }
+            }
+
+            [Benchmark]
+            public object Find()
+            {
+                return LinkedList.FindLast(_object);
+            }
+
+            [Benchmark]
+            public void Remove()
+            {
+                for (var i = 0; i < Count; i++)
+                {
+                    LinkedList.RemoveLast();
+                }
+            }
+        }
     }
 }
