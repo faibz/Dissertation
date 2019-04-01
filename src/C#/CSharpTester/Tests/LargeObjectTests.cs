@@ -179,16 +179,7 @@ namespace CSharpTester.Tests
             [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
-            private readonly Random _random = new Random();
-            private int _find;
-
             [GlobalSetup]
-            public void Setup()
-            {
-                _find = _random.Next(Count);
-            }
-
-            [Benchmark]
             public void Add()
             {
                 for (var i = 0; i < Count; i++)
@@ -203,7 +194,7 @@ namespace CSharpTester.Tests
                 return LinkedList.FindLast(_object);
             }
 
-            [Benchmark]
+            [GlobalCleanup]
             public void Remove()
             {
                 for (var i = 0; i < Count; i++)

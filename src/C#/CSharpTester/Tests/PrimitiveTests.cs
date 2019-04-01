@@ -172,7 +172,7 @@ namespace CSharpTester.Tests
             [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
 
-            [Benchmark]
+            [GlobalSetup]
             public void Add()
             {
                 for (var i = 0; i < Count; i++)
@@ -187,7 +187,7 @@ namespace CSharpTester.Tests
                 return LinkedList.Find(Count - 1);
             }
 
-            [Benchmark]
+            [GlobalCleanup]
             public void Remove()
             {
                 for (var i = 0; i < Count; i++)
