@@ -1,0 +1,361 @@
+Benchmark                                                               Count    Mode      Cnt         Score      Error  Units
+PrimitiveTests.FifoTests                                                    1  sample  8744057        45.178 ±    2.813  ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.00                                    1  sample                    ? 0             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.50                                    1  sample                    ? 0             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.90                                    1  sample                277.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.95                                    1  sample                277.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.99                                    1  sample                277.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.999                                   1  sample                278.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.9999                                  1  sample              12464.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p1.00                                    1  sample            3444736.000             ns/op
+PrimitiveTests.FifoTests                                                   10  sample  6470579       143.300 ±    7.121  ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.00                                   10  sample                    ? 0             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.50                                   10  sample                    ? 0             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.90                                   10  sample                277.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.95                                   10  sample                277.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.99                                   10  sample                278.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.999                                  10  sample                555.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.9999                                 10  sample              69248.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p1.00                                   10  sample            4685824.000             ns/op
+PrimitiveTests.FifoTests                                                 1000  sample  3243773     12089.266 ±   82.943  ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.00                                 1000  sample               7480.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.50                                 1000  sample               9408.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.90                                 1000  sample              14400.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.95                                 1000  sample              16064.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.99                                 1000  sample              31296.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.999                                1000  sample             335360.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.9999                               1000  sample            1344492.339             ns/op
+PrimitiveTests.FifoTests:FifoTests·p1.00                                 1000  sample           34144256.000             ns/op
+PrimitiveTests.FifoTests                                                10000  sample   504405    130239.262 ±  732.151  ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.00                                10000  sample              94080.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.50                                10000  sample             108800.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.90                                10000  sample             174848.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.95                                10000  sample             203008.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.99                                10000  sample             358400.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.999                               10000  sample            2154496.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p0.9999                              10000  sample            5505024.000             ns/op
+PrimitiveTests.FifoTests:FifoTests·p1.00                                10000  sample           26771456.000             ns/op
+PrimitiveTests.IndexAccessTests                                             1  sample  7013647        35.995 ±    3.239  ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.00                      1  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.50                      1  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.90                      1  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.95                      1  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.99                      1  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.999                     1  sample                278.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.9999                    1  sample               8032.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p1.00                      1  sample            4190208.000             ns/op
+PrimitiveTests.IndexAccessTests                                            10  sample  6890024        30.481 ±    3.152  ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.00                     10  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.50                     10  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.90                     10  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.95                     10  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.99                     10  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.999                    10  sample                278.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.9999                   10  sample               2216.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p1.00                     10  sample            6225920.000             ns/op
+PrimitiveTests.IndexAccessTests                                          1000  sample  3844846        54.083 ±   10.394  ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.00                   1000  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.50                   1000  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.90                   1000  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.95                   1000  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.99                   1000  sample                278.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.999                  1000  sample                555.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.9999                 1000  sample              14820.406             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p1.00                   1000  sample           10305536.000             ns/op
+PrimitiveTests.IndexAccessTests                                         10000  sample   733174       167.036 ±    6.642  ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.00                  10000  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.50                  10000  sample                    ? 0             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.90                  10000  sample                277.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.95                  10000  sample                554.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.99                  10000  sample                831.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.999                 10000  sample               1386.000             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p0.9999                10000  sample              29459.280             ns/op
+PrimitiveTests.IndexAccessTests:IndexAccessTests·p1.00                  10000  sample            1095680.000             ns/op
+PrimitiveTests.KeyAccessTests                                               1  sample  7012013        38.500 ±    2.017  ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.00                          1  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.50                          1  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.90                          1  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.95                          1  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.99                          1  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.999                         1  sample                278.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.9999                        1  sample              12736.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p1.00                          1  sample            1953792.000             ns/op
+PrimitiveTests.KeyAccessTests                                              10  sample  6976993        35.972 ±    4.814  ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.00                         10  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.50                         10  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.90                         10  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.95                         10  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.99                         10  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.999                        10  sample                278.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.9999                       10  sample               6368.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p1.00                         10  sample            9633792.000             ns/op
+PrimitiveTests.KeyAccessTests                                            1000  sample  4113107        47.410 ±    2.426  ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.00                       1000  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.50                       1000  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.90                       1000  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.95                       1000  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.99                       1000  sample                278.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.999                      1000  sample                554.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.9999                     1000  sample               9968.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p1.00                       1000  sample            2273280.000             ns/op
+PrimitiveTests.KeyAccessTests                                           10000  sample   717117       156.529 ±   16.747  ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.00                      10000  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.50                      10000  sample                    ? 0             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.90                      10000  sample                277.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.95                      10000  sample                554.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.99                      10000  sample                831.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.999                     10000  sample               1662.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p0.9999                    10000  sample              26304.000             ns/op
+PrimitiveTests.KeyAccessTests:KeyAccessTests·p1.00                      10000  sample            2695168.000             ns/op
+PrimitiveTests.LifoTests                                                    1  sample  6880413        40.185 ±    2.301  ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.00                                    1  sample                    ? 0             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.50                                    1  sample                    ? 0             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.90                                    1  sample                277.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.95                                    1  sample                277.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.99                                    1  sample                277.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.999                                   1  sample                278.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.9999                                  1  sample              12464.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p1.00                                    1  sample            1937408.000             ns/op
+PrimitiveTests.LifoTests                                                   10  sample  6696766        58.261 ±    6.691  ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.00                                   10  sample                    ? 0             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.50                                   10  sample                    ? 0             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.90                                   10  sample                277.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.95                                   10  sample                277.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.99                                   10  sample                277.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.999                                  10  sample                278.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.9999                                 10  sample              12736.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p1.00                                   10  sample           10928128.000             ns/op
+PrimitiveTests.LifoTests                                                 1000  sample  3548997      5381.824 ±   36.117  ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.00                                 1000  sample               3324.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.50                                 1000  sample               4704.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.90                                 1000  sample               7200.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.95                                 1000  sample               8032.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.99                                 1000  sample               9136.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.999                                1000  sample              55104.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.9999                               1000  sample             617472.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p1.00                                 1000  sample           11468800.000             ns/op
+PrimitiveTests.LifoTests                                                10000  sample   674440     49956.387 ±  259.028  ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.00                                10000  sample              42624.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.50                                10000  sample              44544.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.90                                10000  sample              64000.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.95                                10000  sample              76672.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.99                                10000  sample              93568.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.999                               10000  sample             273920.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p0.9999                              10000  sample            2363392.000             ns/op
+PrimitiveTests.LifoTests:LifoTests·p1.00                                10000  sample           35323904.000             ns/op
+PrimitiveTests.SequentialAccessTests                                        1  sample  5769698        36.878 ±    4.211  ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.00            1  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.50            1  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.90            1  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.95            1  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.99            1  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.999           1  sample                278.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.9999          1  sample              11904.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p1.00            1  sample            6283264.000             ns/op
+PrimitiveTests.SequentialAccessTests                                       10  sample  6942740        34.042 ±    3.802  ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.00           10  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.50           10  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.90           10  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.95           10  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.99           10  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.999          10  sample                278.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.9999         10  sample               6368.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p1.00           10  sample            5832704.000             ns/op
+PrimitiveTests.SequentialAccessTests                                     1000  sample  4349178        38.901 ±    2.979  ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.00         1000  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.50         1000  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.90         1000  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.95         1000  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.99         1000  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.999        1000  sample                554.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.9999       1000  sample               5264.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p1.00         1000  sample            3342336.000             ns/op
+PrimitiveTests.SequentialAccessTests                                    10000  sample   653536       223.420 ±   25.553  ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.00        10000  sample                    ? 0             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.50        10000  sample                277.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.90        10000  sample                554.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.95        10000  sample                554.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.99        10000  sample                832.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.999       10000  sample               1940.000             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p0.9999      10000  sample              81165.990             ns/op
+PrimitiveTests.SequentialAccessTests:SequentialAccessTests·p1.00        10000  sample            4489216.000             ns/op
+SmallObjectTests.FifoTests                                                  1  sample  6706979       165.458 ±   30.226  ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.00                                  1  sample                    ? 0             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.50                                  1  sample                    ? 0             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.90                                  1  sample                277.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.95                                  1  sample                277.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.99                                  1  sample                277.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.999                                 1  sample                554.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.9999                                1  sample             193357.312             ns/op
+SmallObjectTests.FifoTests:FifoTests·p1.00                                  1  sample           34078720.000             ns/op
+SmallObjectTests.FifoTests                                                 10  sample  6105709       374.818 ±   28.030  ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.00                                 10  sample                    ? 0             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.50                                 10  sample                    ? 0             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.90                                 10  sample                277.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.95                                 10  sample                277.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.99                                 10  sample                278.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.999                                10  sample              38784.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.9999                               10  sample             395191.296             ns/op
+SmallObjectTests.FifoTests:FifoTests·p1.00                                 10  sample           17989632.000             ns/op
+SmallObjectTests.FifoTests                                               1000  sample  4050451     14910.848 ±  164.736  ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.00                               1000  sample               6648.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.50                               1000  sample               9696.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.90                               1000  sample              12464.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.95                               1000  sample              16336.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.99                               1000  sample             114944.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.999                              1000  sample             731136.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.9999                             1000  sample            3735366.861             ns/op
+SmallObjectTests.FifoTests:FifoTests·p1.00                               1000  sample           49152000.000             ns/op
+SmallObjectTests.FifoTests                                              10000  sample   384594    159372.997 ± 1816.707  ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.00                              10000  sample              68864.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.50                              10000  sample             105216.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.90                              10000  sample             246016.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.95                              10000  sample             381952.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.99                              10000  sample            1073152.000             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.999                             10000  sample            4117360.640             ns/op
+SmallObjectTests.FifoTests:FifoTests·p0.9999                            10000  sample           11438686.208             ns/op
+SmallObjectTests.FifoTests:FifoTests·p1.00                              10000  sample           57606144.000             ns/op
+SmallObjectTests.IndexAccessTests                                           1  sample  7448762        90.748 ±   24.238  ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.00                    1  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.50                    1  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.90                    1  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.95                    1  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.99                    1  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.999                   1  sample                278.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.9999                  1  sample              66719.667             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p1.00                    1  sample           38207488.000             ns/op
+SmallObjectTests.IndexAccessTests                                          10  sample  7877896       120.545 ±   40.218  ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.00                   10  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.50                   10  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.90                   10  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.95                   10  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.99                   10  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.999                  10  sample                278.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.9999                 10  sample              96949.837             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p1.00                   10  sample           67043328.000             ns/op
+SmallObjectTests.IndexAccessTests                                        1000  sample  3368217       144.725 ±   32.946  ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.00                 1000  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.50                 1000  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.90                 1000  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.95                 1000  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.99                 1000  sample                554.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.999                1000  sample               1662.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.9999               1000  sample             102047.667             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p1.00                 1000  sample           17399808.000             ns/op
+SmallObjectTests.IndexAccessTests                                       10000  sample   522817       513.366 ±  133.047  ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.00                10000  sample                    ? 0             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.50                10000  sample                277.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.90                10000  sample                831.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.95                10000  sample               1108.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.99                10000  sample               1938.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.999               10000  sample              21600.000             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p0.9999              10000  sample             446478.029             ns/op
+SmallObjectTests.IndexAccessTests:IndexAccessTests·p1.00                10000  sample           18743296.000             ns/op
+SmallObjectTests.KeyAccessTests                                             1  sample  7104289       119.385 ±   25.416  ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.00                        1  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.50                        1  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.90                        1  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.95                        1  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.99                        1  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.999                       1  sample                278.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.9999                      1  sample              88722.176             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p1.00                        1  sample           22839296.000             ns/op
+SmallObjectTests.KeyAccessTests                                            10  sample  8049785        81.168 ±    6.630  ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.00                       10  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.50                       10  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.90                       10  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.95                       10  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.99                       10  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.999                      10  sample                278.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.9999                     10  sample             109056.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p1.00                       10  sample            4161536.000             ns/op
+SmallObjectTests.KeyAccessTests                                          1000  sample  3148297       141.672 ±   15.742  ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.00                     1000  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.50                     1000  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.90                     1000  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.95                     1000  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.99                     1000  sample                278.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.999                    1000  sample               1662.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.9999                   1000  sample             156971.571             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p1.00                     1000  sample            6447104.000             ns/op
+SmallObjectTests.KeyAccessTests                                         10000  sample   504509       551.666 ±  175.669  ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.00                    10000  sample                    ? 0             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.50                    10000  sample                277.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.90                    10000  sample                554.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.95                    10000  sample                831.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.99                    10000  sample               1108.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.999                   10000  sample              19936.000             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p0.9999                  10000  sample             432459.264             ns/op
+SmallObjectTests.KeyAccessTests:KeyAccessTests·p1.00                    10000  sample           18186240.000             ns/op
+SmallObjectTests.LifoTests                                                  1  sample  6017541       144.487 ±   18.266  ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.00                                  1  sample                    ? 0             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.50                                  1  sample                    ? 0             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.90                                  1  sample                277.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.95                                  1  sample                277.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.99                                  1  sample                277.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.999                                 1  sample                554.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.9999                                1  sample             222526.925             ns/op
+SmallObjectTests.LifoTests:LifoTests·p1.00                                  1  sample           13975552.000             ns/op
+SmallObjectTests.LifoTests                                                 10  sample  7296771       224.629 ±   24.814  ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.00                                 10  sample                    ? 0             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.50                                 10  sample                    ? 0             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.90                                 10  sample                277.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.95                                 10  sample                277.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.99                                 10  sample                278.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.999                                10  sample               1384.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.9999                               10  sample             292352.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p1.00                                 10  sample           16744448.000             ns/op
+SmallObjectTests.LifoTests                                               1000  sample  3890909      4135.304 ±  107.746  ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.00                               1000  sample               1384.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.50                               1000  sample               2492.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.90                               1000  sample               3324.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.95                               1000  sample               4704.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.99                               1000  sample              11344.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.999                              1000  sample             278528.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.9999                             1000  sample            2173485.056             ns/op
+SmallObjectTests.LifoTests:LifoTests·p1.00                               1000  sample           54198272.000             ns/op
+SmallObjectTests.LifoTests                                              10000  sample   741171     40904.709 ±  314.590  ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.00                              10000  sample              30176.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.50                              10000  sample              31296.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.90                              10000  sample              53696.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.95                              10000  sample              58432.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.99                              10000  sample             127360.000             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.999                             10000  sample             594591.744             ns/op
+SmallObjectTests.LifoTests:LifoTests·p0.9999                            10000  sample            2989855.539             ns/op
+SmallObjectTests.LifoTests:LifoTests·p1.00                              10000  sample           27066368.000             ns/op
+SmallObjectTests.SequentialAccessTests                                      1  sample  7438410        46.392 ±    7.745  ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.00          1  sample                    ? 0             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.50          1  sample                    ? 0             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.90          1  sample                277.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.95          1  sample                277.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.99          1  sample                277.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.999         1  sample                278.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.9999        1  sample              23853.763             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p1.00          1  sample           14172160.000             ns/op
+SmallObjectTests.SequentialAccessTests                                     10  sample  6019739        64.456 ±    6.787  ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.00         10  sample                    ? 0             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.50         10  sample                    ? 0             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.90         10  sample                277.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.95         10  sample                277.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.99         10  sample                277.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.999        10  sample                278.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.9999       10  sample              43712.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p1.00         10  sample            5570560.000             ns/op
+SmallObjectTests.SequentialAccessTests                                   1000  sample  4391596      2070.815 ±   20.547  ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.00       1000  sample               1662.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.50       1000  sample               1662.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.90       1000  sample               2216.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.95       1000  sample               2492.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.99       1000  sample               4432.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.999      1000  sample              47616.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.9999     1000  sample             298414.234             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p1.00       1000  sample           11911168.000             ns/op
+SmallObjectTests.SequentialAccessTests                                  10000  sample   778181     36312.625 ±  299.136  ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.00      10000  sample              20224.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.50      10000  sample              27136.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.90      10000  sample              49280.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.95      10000  sample              59840.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.99      10000  sample             144896.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.999     10000  sample             724992.000             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p0.9999    10000  sample            3451808.973             ns/op
+SmallObjectTests.SequentialAccessTests:SequentialAccessTests·p1.00      10000  sample           14401536.000             ns/op
