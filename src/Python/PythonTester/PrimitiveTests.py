@@ -24,11 +24,13 @@ index_tester = IndexRetrievalTests()
 
 index_tester.setup(1, 0)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 index_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
+
+index_tester.cleanup()
 
 f = open('../Data/prim-index-1.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -38,11 +40,11 @@ index_tester.cleanup()
 
 index_tester.setup(10, random.randint(0, 9))
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 index_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-index-10.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -52,11 +54,11 @@ index_tester.cleanup()
 
 index_tester.setup(1000, random.randint(0, 999))
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 index_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-index-1000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -66,11 +68,11 @@ index_tester.cleanup()
 
 index_tester.setup(10000, random.randint(0, 9999))
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 index_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-index-10000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -98,11 +100,11 @@ fifo_tester = FifoTests()
 
 fifo_tester.setup(1)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 fifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-fifo-1.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -110,11 +112,11 @@ f.close()
 
 fifo_tester.setup(10)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 fifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-fifo-10.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -122,11 +124,11 @@ f.close()
 
 fifo_tester.setup(1000)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 fifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-fifo-1000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -134,11 +136,11 @@ f.close()
 
 fifo_tester.setup(10000)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 fifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-fifo-10000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -164,11 +166,11 @@ lifo_tester = LifoTests()
 
 lifo_tester.setup(1)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 lifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-lifo-1.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -176,11 +178,11 @@ f.close()
 
 lifo_tester.setup(10)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 lifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-lifo-10.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -188,11 +190,11 @@ f.close()
 
 lifo_tester.setup(1000)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 lifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-lifo-1000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -200,11 +202,11 @@ f.close()
 
 lifo_tester.setup(10000)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 lifo_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-lifo-10000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -232,11 +234,11 @@ key_tester = KeyRetrievalTests()
 
 key_tester.setup(1, 0)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 key_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-key-1.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -246,11 +248,11 @@ key_tester.cleanup()
 
 key_tester.setup(10, random.randint(0, 9))
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 key_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-key-10.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -260,11 +262,11 @@ key_tester.cleanup()
 
 key_tester.setup(1000, random.randint(0, 999))
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 key_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-key-1000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -274,11 +276,11 @@ key_tester.cleanup()
 
 key_tester.setup(10000, random.randint(0, 9999))
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 key_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-key-10000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -309,11 +311,11 @@ sequential_tester = SequentialTests()
 
 sequential_tester.setup(1)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 sequential_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-sequential-1.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -323,11 +325,11 @@ sequential_tester.cleanup()
 
 sequential_tester.setup(10)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 sequential_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-sequential-10.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -337,11 +339,11 @@ sequential_tester.cleanup()
 
 sequential_tester.setup(1000)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 sequential_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-sequential-1000.txt', 'a+')
 f.write('%d,' % time_taken)
@@ -351,11 +353,11 @@ sequential_tester.cleanup()
 
 sequential_tester.setup(10000)
 
-startTime = time.perf_counter_ns()
+startTime = time.perf_counter()
 
 sequential_tester.test()
 
-time_taken = time.perf_counter_ns() - startTime
+time_taken = (time.perf_counter() - startTime) * 1000000000
 
 f = open('../Data/prim-sequential-10000.txt', 'a+')
 f.write('%d,' % time_taken)
