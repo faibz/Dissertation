@@ -10,7 +10,7 @@ public class PrimitiveTests {
     @State(Scope.Thread)
     public static class PrimitiveTestsState {
         private Random random = new Random();
-        public Deque<Integer> stack = new ArrayDeque<Integer>();;
+        public Deque<Integer> stack = new ArrayDeque<Integer>();
         public Queue<Integer> queue = new LinkedList<Integer>();
         public LinkedList<Integer> linkedList = new LinkedList<Integer>();
         public ArrayList<Integer> list = new ArrayList<Integer>();
