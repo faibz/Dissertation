@@ -2,16 +2,19 @@ import time
 import random
 import collections
 
+from Objects.Object import Object
+
 
 class IndexRetrievalTests:
     _list = []
     _target = 0
+    _object = Object()
 
     def setup(self, iteration_count, target):
         self._target = target
 
         for x in range(iteration_count):
-            self._list.append(x)
+            self._list.append(self._object)
 
     def test(self):
         return self._list[self._target]
@@ -30,7 +33,7 @@ index_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-index-1.txt', 'a+')
+f = open('../Data/obj-index-1.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -44,7 +47,7 @@ index_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-index-10.txt', 'a+')
+f = open('../Data/obj-index-10.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -58,7 +61,7 @@ index_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-index-1000.txt', 'a+')
+f = open('../Data/obj-index-1000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -72,7 +75,7 @@ index_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-index-10000.txt', 'a+')
+f = open('../Data/obj-index-10000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -80,18 +83,19 @@ index_tester.cleanup()
 
 
 class FifoTests:
-    iteration_count = 0
-    deque = collections.deque()
+    _iteration_count = 0
+    _deque = collections.deque()
+    _object = Object()
 
     def setup(self, iteration_count):
-        self.iteration_count = iteration_count
+        self._iteration_count = iteration_count
 
     def test(self):
-        for x in range(self.iteration_count):
-            self.deque.append(x)
+        for x in range(self._iteration_count):
+            self._deque.append(self._object)
 
-        for x in range(self.iteration_count):
-            self.deque.popleft()
+        for x in range(self._iteration_count):
+            self._deque.popleft()
 
 
 fifo_tester = FifoTests()
@@ -104,7 +108,7 @@ fifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-fifo-1.txt', 'a+')
+f = open('../Data/obj-fifo-1.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -116,7 +120,7 @@ fifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-fifo-10.txt', 'a+')
+f = open('../Data/obj-fifo-10.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -128,7 +132,7 @@ fifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-fifo-1000.txt', 'a+')
+f = open('../Data/obj-fifo-1000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -140,24 +144,25 @@ fifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-fifo-10000.txt', 'a+')
+f = open('../Data/obj-fifo-10000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
 
 class LifoTests:
-    iteration_count = 0
-    deque = collections.deque()
+    _iteration_count = 0
+    _deque = collections.deque()
+    _object = Object()
 
     def setup(self, iteration_count):
-        self.iteration_count = iteration_count
+        self._iteration_count = iteration_count
 
     def test(self):
-        for x in range(self.iteration_count):
-            self.deque.append(x)
+        for x in range(self._iteration_count):
+            self._deque.append(self._object)
 
-        for x in range(self.iteration_count):
-            self.deque.pop()
+        for x in range(self._iteration_count):
+            self._deque.pop()
 
 
 lifo_tester = LifoTests()
@@ -170,7 +175,7 @@ lifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-lifo-1.txt', 'a+')
+f = open('../Data/obj-lifo-1.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -182,7 +187,7 @@ lifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-lifo-10.txt', 'a+')
+f = open('../Data/obj-lifo-10.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -194,7 +199,7 @@ lifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-lifo-1000.txt', 'a+')
+f = open('../Data/obj-lifo-1000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -206,7 +211,7 @@ lifo_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-lifo-10000.txt', 'a+')
+f = open('../Data/obj-lifo-10000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -214,12 +219,13 @@ f.close()
 class KeyRetrievalTests:
     _dict = {}
     _target = 0
+    _object = Object()
 
     def setup(self, iteration_count, target):
         self._target = target
 
         for x in range(iteration_count):
-            self._dict[x] = x
+            self._dict[x] = self._object
 
     def test(self):
         return self._dict.get(self._target)
@@ -238,7 +244,7 @@ key_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-key-1.txt', 'a+')
+f = open('../Data/obj-key-1.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -252,7 +258,7 @@ key_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-key-10.txt', 'a+')
+f = open('../Data/obj-key-10.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -266,7 +272,7 @@ key_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-key-1000.txt', 'a+')
+f = open('../Data/obj-key-1000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -280,7 +286,7 @@ key_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-key-10000.txt', 'a+')
+f = open('../Data/obj-key-10000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -288,21 +294,22 @@ key_tester.cleanup()
 
 
 class SequentialTests:
-    iteration_count = 0
-    deque = collections.deque()
+    _iteration_count = 0
+    _deque = collections.deque()
+    _object = Object()
 
     def setup(self, iteration_count):
-        self.iteration_count = iteration_count
+        self._iteration_count = iteration_count
 
-        for x in range(self.iteration_count):
-            self.deque.append(x)
+        for x in range(self._iteration_count):
+            self._deque.append(self._object)
 
     def test(self):
-        return self.deque.index(self.iteration_count - 1)
+        return self._deque.index(self._object)
 
     def cleanup(self):
-        for x in range(self.iteration_count):
-            self.deque.pop()
+        for x in range(self._iteration_count):
+            self._deque.pop()
 
 
 sequential_tester = SequentialTests()
@@ -315,7 +322,7 @@ sequential_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-sequential-1.txt', 'a+')
+f = open('../Data/obj-sequential-1.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -329,7 +336,7 @@ sequential_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-sequential-10.txt', 'a+')
+f = open('../Data/obj-sequential-10.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -343,7 +350,7 @@ sequential_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-sequential-1000.txt', 'a+')
+f = open('../Data/obj-sequential-1000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 
@@ -357,7 +364,7 @@ sequential_tester.test()
 
 time_taken = time.perf_counter_ns() - startTime
 
-f = open('../Data/prim-sequential-10000.txt', 'a+')
+f = open('../Data/obj-sequential-10000.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
 

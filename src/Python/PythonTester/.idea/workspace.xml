@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f47c2bb-01c4-4510-a2df-ad6db4986a84" name="Default Changelist" comment="" />
+    <list default="true" id="9f47c2bb-01c4-4510-a2df-ad6db4986a84" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Data/prim-index-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/prim-index-10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/prim-index-1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Data/prim-index-10000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LargeObjectTests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/LargeObject.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/SmallObject.py" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimitiveTests.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrimitiveTests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmallObjectTests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectTests.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,56 +21,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PrimitiveTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="479">
+              <caret line="363" column="27" lean-forward="true" selection-start-line="363" selection-start-column="27" selection-end-line="363" selection-end-column="27" />
               <folding>
-                <element signature="e#28#46#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmallObjectTests.py">
+        <entry file="file://$PROJECT_DIR$/DataProcessor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="323">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ObjectTests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="300" column="37" lean-forward="true" selection-start-line="300" selection-start-column="37" selection-end-line="300" selection-end-column="37" />
               <folding>
-                <element signature="e#28#46#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Objects/SmallObject.py">
+        <entry file="file://$PROJECT_DIR$/Objects/Object.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LargeObjectTests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3009">
-              <caret line="181" selection-start-line="181" selection-end-line="181" />
-              <folding>
-                <element signature="e#28#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Objects/LargeObject.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -80,27 +79,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ListTests.py" />
-        <option value="$PROJECT_DIR$/SmallObjectTests.py" />
         <option value="$PROJECT_DIR$/Objects/LargeObject.py" />
         <option value="$PROJECT_DIR$/LargeObjectTests.py" />
         <option value="$PROJECT_DIR$/Objects/SmallObject.py" />
         <option value="$PROJECT_DIR$/PrimitiveTests.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/PythonTester.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/SmallObjectTests.py" />
+        <option value="$PROJECT_DIR$/Objects/Object.py" />
+        <option value="$PROJECT_DIR$/ObjectTests.py" />
+        <option value="$PROJECT_DIR$/DataProcessor.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="363" />
-    <option name="y" value="-8" />
+    <option name="x" value="603" />
     <option name="width" value="983" />
     <option name="height" value="711" />
   </component>
@@ -110,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +117,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,16 +207,17 @@
       <workItem from="1554043151583" duration="7622000" />
       <workItem from="1555152826109" duration="226000" />
       <workItem from="1555153145022" duration="1225000" />
+      <workItem from="1555170774038" duration="8019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9073000" />
+    <option name="totallyTimeSpent" value="17092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1890849" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19128996" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -276,29 +268,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Objects/SmallObject.py">
+    <entry file="file://$PROJECT_DIR$/Objects/Object.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmallObjectTests.py">
+    <entry file="file://$PROJECT_DIR$/PrimitiveTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="479">
+          <caret line="363" column="27" lean-forward="true" selection-start-line="363" selection-start-column="27" selection-end-line="363" selection-end-column="27" />
           <folding>
-            <element signature="e#28#46#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrimitiveTests.py">
+    <entry file="file://$PROJECT_DIR$/DataProcessor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="323">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="300" column="37" lean-forward="true" selection-start-line="300" selection-start-column="37" selection-end-line="300" selection-end-column="37" />
           <folding>
-            <element signature="e#28#46#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
