@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f47c2bb-01c4-4510-a2df-ad6db4986a84" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Data/prim-index-1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Data/prim-index-10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Data/prim-index-1000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Data/prim-index-10000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimitiveTests.py" beforeDir="false" afterPath="$PROJECT_DIR$/PrimitiveTests.py" afterDir="false" />
-    </list>
+    <list default="true" id="9f47c2bb-01c4-4510-a2df-ad6db4986a84" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PrimitiveTests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+            <state relative-caret-position="289">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
               <folding>
                 <element signature="e#28#46#0" expanded="true" />
               </folding>
@@ -222,16 +215,15 @@
       <updated>1554043148641</updated>
       <workItem from="1554043151583" duration="7622000" />
       <workItem from="1555152826109" duration="226000" />
-      <workItem from="1555153145022" duration="1198000" />
+      <workItem from="1555153145022" duration="1225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9046000" />
+    <option name="totallyTimeSpent" value="9073000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1890849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -303,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PrimitiveTests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
+        <state relative-caret-position="289">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="e#28#46#0" expanded="true" />
           </folding>
