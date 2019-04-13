@@ -7,6 +7,7 @@ import cProfile
 
 class IndexRetrievalTests:
     _list = []
+    interation_count = 0;
     _target = 0
 
     def setup(self, iteration_count, target):
@@ -22,25 +23,23 @@ class IndexRetrievalTests:
         self._list.clear()
 
 
-# index_iterations = 1
-#
-# index_tester = IndexRetrievalTests()
-# index_tester.setup(index_iterations, random.randint(1, index_iterations) - 1)
-#
-# cProfile.run('index_tester.test()')
+index_tester = IndexRetrievalTests()
 
-# profiler = cProfile.Profile(timeunit=0.000000)
-# profiler.enable()
-# tester.test()
-# profiler.disable()
-#
-# s = io.StringIO()
-# sortby = pstats.SortKey.CUMULATIVE
-# ps = pstats.Stats(profiler, stream=s).sort_stats(sortby)
-# ps.print_stats()
-# print(s.getvalue())
+index_tester.setup(1, 0)
+cProfile.run('index_tester.test()', '../Data/prim-index-1')
+index_tester.cleanup()
 
-# index_tester.cleanup()
+index_tester.setup(10, random.randint(0, 9))
+cProfile.run('index_tester.test()', '../Data/prim-index-10')
+index_tester.cleanup()
+
+index_tester.setup(1000, random.randint(0, 999))
+cProfile.run('index_tester.test()', '../Data/prim-index-1000')
+index_tester.cleanup()
+
+index_tester.setup(10000, random.randint(0, 9999))
+cProfile.run('index_tester.test()', '../Data/prim-index-10000')
+index_tester.cleanup()
 
 
 class FifoTests:
@@ -52,7 +51,7 @@ class FifoTests:
 
     def test(self):
         for x in range(self.iteration_count):
-            self.deque.append(1)
+            self.deque.append(x)
 
         for x in range(self.iteration_count):
             self.deque.popleft()
@@ -85,7 +84,7 @@ class LifoTests:
 
     def test(self):
         for x in range(self.iteration_count):
-            self.deque.append(1)
+            self.deque.append(x)
 
         for x in range(self.iteration_count):
             self.deque.pop()
@@ -153,7 +152,7 @@ class SequentialTests:
         self.iteration_count = iteration_count
 
         for x in range(self.iteration_count):
-            self.deque.append()
+            self.deque.append(x)
 
     def test(self):
         return self.deque.index(self.iteration_count - 1)
