@@ -175,6 +175,7 @@ namespace CSharpTester.Tests
         {
             public LinkedList<SmallObject> LinkedList { get; set; } = new LinkedList<SmallObject>();
             private readonly SmallObject _object = new SmallObject();
+            private readonly SmallObject _targetObject = new SmallObject {CharProperty = 'b', IntProperty = 1};
 
             [Params(1, 10, 1000, 10000)]
             public int Count { get; set; }
@@ -191,7 +192,7 @@ namespace CSharpTester.Tests
             [Benchmark]
             public object Find()
             {
-                return LinkedList.FindLast(_object);
+                return LinkedList.FindLast(_targetObject);
             }
 
             [GlobalCleanup]
