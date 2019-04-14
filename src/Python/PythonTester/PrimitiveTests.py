@@ -30,8 +30,6 @@ index_tester.test()
 
 time_taken = (time.perf_counter() - startTime) * 1000000000
 
-index_tester.cleanup()
-
 f = open('../Data/prim-index-1.txt', 'a+')
 f.write('%d,' % time_taken)
 f.close()
@@ -303,8 +301,7 @@ class SequentialTests:
         return self.deque.index(self.iteration_count - 1)
 
     def cleanup(self):
-        for x in range(self.iteration_count):
-            self.deque.pop()
+        self.deque.clear()
 
 
 sequential_tester = SequentialTests()

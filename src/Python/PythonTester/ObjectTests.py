@@ -297,19 +297,22 @@ class SequentialTests:
     _iteration_count = 0
     _deque = collections.deque()
     _object = Object()
+    _lastObject = Object()
 
     def setup(self, iteration_count):
         self._iteration_count = iteration_count
+        self._lastObject._intProp = 10
 
-        for x in range(self._iteration_count):
+        for x in range(self._iteration_count - 1):
             self._deque.append(self._object)
 
+        self._deque.append(self._lastObject)
+
     def test(self):
-        return self._deque.index(self._object)
+        return self._deque.index(self._lastObject)
 
     def cleanup(self):
-        for x in range(self._iteration_count):
-            self._deque.pop()
+        self._deque.clear()
 
 
 sequential_tester = SequentialTests()
