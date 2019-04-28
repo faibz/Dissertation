@@ -1,0 +1,50 @@
+Benchmark				Length	Time(ns)
+PrimitiveTests.FifoTests		1	45.178
+PrimitiveTests.FifoTests		10	143.300
+PrimitiveTests.FifoTests		1000	12089.266
+PrimitiveTests.FifoTests		10000	130239.262
+
+PrimitiveTests.IndexAccessTests		1	35.995
+PrimitiveTests.IndexAccessTests		10	30.481
+PrimitiveTests.IndexAccessTests		1000	54.083
+PrimitiveTests.IndexAccessTests		10000	167.036
+
+PrimitiveTests.KeyAccessTests		1	38.500
+PrimitiveTests.KeyAccessTests		10	35.972
+PrimitiveTests.KeyAccessTests		1000	47.410
+PrimitiveTests.KeyAccessTests		10000	156.529
+
+PrimitiveTests.LifoTests		1	40.185
+PrimitiveTests.LifoTests		10	58.261
+PrimitiveTests.LifoTests		1000	5381.824
+PrimitiveTests.LifoTests		10000	49956.387
+
+PrimitiveTests.SequentialAccessTests	1	36.878
+PrimitiveTests.SequentialAccessTests	10	34.042
+PrimitiveTests.SequentialAccessTests	1000	38.901
+PrimitiveTests.SequentialAccessTests	10000	223.420
+
+ObjectTests.FifoTests			1	165.458
+ObjectTests.FifoTests			10	374.818
+ObjectTests.FifoTests			1000	14910.848
+ObjectTests.FifoTests			10000	159372.997
+
+ObjectTests.IndexAccessTests		1	90.748
+ObjectTests.IndexAccessTests		10	120.545
+ObjectTests.IndexAccessTests		1000	144.725
+ObjectTests.IndexAccessTests		10000	513.366
+
+ObjectTests.KeyAccessTests		1	119.385
+ObjectTests.KeyAccessTests		10	81.168
+ObjectTests.KeyAccessTests		1000	141.672
+ObjectTests.KeyAccessTests		10000	551.666
+
+ObjectTests.LifoTests			1	144.487
+ObjectTests.LifoTests			10	224.629
+ObjectTests.LifoTests			1000	4135.304
+ObjectTests.LifoTests			10000	40904.709
+
+ObjectTests.SequentialAccessTests	1	46.392
+ObjectTests.SequentialAccessTests	10	64.456
+ObjectTests.SequentialAccessTests	1000	2070.815
+ObjectTests.SequentialAccessTests	10000	36312.625

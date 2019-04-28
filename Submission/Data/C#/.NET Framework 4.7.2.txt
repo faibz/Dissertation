@@ -1,0 +1,50 @@
+Benchmark						Length	Time(ns)
+CSharpTester.Tests.PrimitiveTests.FifoTests		1	9.284
+CSharpTester.Tests.PrimitiveTests.FifoTests		10	132.521
+CSharpTester.Tests.PrimitiveTests.FifoTests		1000	17555.719
+CSharpTester.Tests.PrimitiveTests.FifoTests		10000	173018.784
+
+CSharpTester.Tests.PrimitiveTests.IndexAccessTests	1	6.209
+CSharpTester.Tests.PrimitiveTests.IndexAccessTests	10	4.871
+CSharpTester.Tests.PrimitiveTests.IndexAccessTests	1000	5.279
+CSharpTester.Tests.PrimitiveTests.IndexAccessTests	10000	5.280
+
+CSharpTester.Tests.PrimitiveTests.KeyAccessTests	1	13.170
+CSharpTester.Tests.PrimitiveTests.KeyAccessTests	10	13.510
+CSharpTester.Tests.PrimitiveTests.KeyAccessTests	1000	13.670
+CSharpTester.Tests.PrimitiveTests.KeyAccessTests	10000	13.880
+
+CSharpTester.Tests.PrimitiveTests.LifoTests		1	5.709
+CSharpTester.Tests.PrimitiveTests.LifoTests		10	51.353
+CSharpTester.Tests.PrimitiveTests.LifoTests		1000	5141.879
+CSharpTester.Tests.PrimitiveTests.LifoTests		10000	51911.234
+
+CSharpTester.Tests.PrimitiveTests.SequentialAccessTests	1	7.220
+CSharpTester.Tests.PrimitiveTests.SequentialAccessTests	10	22.780
+CSharpTester.Tests.PrimitiveTests.SequentialAccessTests	1000	2083.911
+CSharpTester.Tests.PrimitiveTests.SequentialAccessTests	10000	20701.587
+
+CSharpTester.Tests.ObjectTests.FifoTests		1	10.390
+CSharpTester.Tests.ObjectTests.FifoTests		10	139.220
+CSharpTester.Tests.ObjectTests.FifoTests		1000	17827.520
+CSharpTester.Tests.ObjectTests.FifoTests		10000	180284.070
+
+CSharpTester.Tests.ObjectTests.IndexAccessTests		1	1.460
+CSharpTester.Tests.ObjectTests.IndexAccessTests		10	1.643
+CSharpTester.Tests.ObjectTests.IndexAccessTests		1000	1.622
+CSharpTester.Tests.ObjectTests.IndexAccessTests		10000	1.606
+
+CSharpTester.Tests.ObjectTests.KeyAccessTests		1	8.735
+CSharpTester.Tests.ObjectTests.KeyAccessTests		10	8.705
+CSharpTester.Tests.ObjectTests.KeyAccessTests		1000	8.390
+CSharpTester.Tests.ObjectTests.KeyAccessTests		10000	8.409
+
+CSharpTester.Tests.ObjectTests.LifoTests		1	6.848
+CSharpTester.Tests.ObjectTests.LifoTests		10	63.974
+CSharpTester.Tests.ObjectTests.LifoTests		1000	6454.369
+CSharpTester.Tests.ObjectTests.LifoTests		10000	61990.094
+
+CSharpTester.Tests.ObjectTests.SequentialAccessTests	1	13.530
+CSharpTester.Tests.ObjectTests.SequentialAccessTests	10	73.840
+CSharpTester.Tests.ObjectTests.SequentialAccessTests	1000	5655.690
+CSharpTester.Tests.ObjectTests.SequentialAccessTests	10000	57269.170
