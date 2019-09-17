@@ -1,6 +1,6 @@
 # IndependentStudies
 
-This repository holds everything I created for my dissertation, and the dissertation itself. All the data I used, benchmarks I wrote, and graphs I created.
+From data to code, this repository holds everything I created for my dissertation, and the dissertation itself.
 
 ## Abstract
 
